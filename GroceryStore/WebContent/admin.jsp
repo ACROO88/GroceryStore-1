@@ -57,12 +57,11 @@ a:active {
 }
 </style>
 </head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <h1>Complete List</h1>
 <body>
 <form action = "ViewAllServlet" method="post">
 <table align="center">
-<c:forEach items="${requestScope.allItems}" var="currentitem">
+<c:forEach items="${allItems}" var="currentitem">
 <tr>
    <td align="left"><input type="radio" name="id" value="${currentitem.itemID}"></td>
    <td align="left">${currentitem.item}</td>
@@ -81,16 +80,3 @@ a:active {
 </p>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-        
